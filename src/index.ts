@@ -30,11 +30,9 @@ line.update({
   //   [+0.5, -0.5],
   // ],
 })
-// line.render()
 
 const jitter = new JitterNode(draw)
 jitter.update({ scale: 0.4 }, line.attrs)
-// jitter.render()
 
 const extrude = new ExpandNode(draw)
 extrude.update({ distance: 0.2 }, jitter.attrs)
