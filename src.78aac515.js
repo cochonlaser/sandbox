@@ -61,4 +61,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"undefined"!=typeo
 },{"gl-matrix":"IF0X"}],"B6dB":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var r=e(require("regl")),t=require("./draw"),a=require("./expand"),i=require("./jitter"),d=require("./polyline"),s=r.default({extensions:["oes_standard_derivatives"]});s.clear({color:[0,0,0,0],depth:1});for(var n=t.createDraw(s),o=[],u=0;u<2*Math.PI;u++)o.push([.6*Math.cos(u),.6*Math.sin(u)]);var l=new d.PolylineNode(n);l.update({points:o});var p=new i.JitterNode(n);p.update({scale:.4},l.attrs);var c=new a.ExpandNode(n);c.update({distance:.2},p.attrs),c.render();
 },{"regl":"EBub","./draw":"VRyS","./expand":"UCpq","./jitter":"HXH0","./polyline":"BBNW"}]},{},["B6dB"], null)
-//# sourceMappingURL=/src.78aac515.js.map
+//# sourceMappingURL=src.78aac515.js.map
