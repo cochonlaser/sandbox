@@ -33,7 +33,7 @@ line.update({
 // line.render()
 
 const jitter = new JitterNode(draw)
-jitter.update({ scale: 0.2 }, line.attrs)
+jitter.update({ scale: 0.4 }, line.attrs)
 // jitter.render()
 
 const extrude = new ExpandNode(draw)
